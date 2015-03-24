@@ -73,6 +73,11 @@ else:
                 '_multiprocessing',
                 '_hashlib',
                 '_strptime',
+                '_ssl',
+                'problem_report',
+                'apt',
+                'apt_pkg',
+                'apport',
 
                 # Not stdlib but also non-isolable because of core-features
                 'greenlet',
