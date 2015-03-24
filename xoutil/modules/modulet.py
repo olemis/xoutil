@@ -175,7 +175,7 @@ else:
                 res.__file__ = origin
                 try:
                     if desc[-1] == imp.PY_SOURCE:
-                        exec_(fp, res.__dict__)
+                        exec_(fp.read(), res.__dict__)
                     else:
                         raise ImportError('Unloadable %s' % fn)
                 finally:
